@@ -2,7 +2,7 @@
 
 An app to help and connect learners of the Irish language 🇮🇪🧑‍🏫
 
-focal (meaning: a word)
+focal (meaning: a word) &
 <a href="https://www3.smo.uhi.ac.uk/gaeilge/donncha/focal/focal044.html">cúpla focal = a few words (the amount of Irish that any Irishman can produce, if pressed)</a>
 
 ## Aims & Planning
@@ -19,16 +19,32 @@ I wrote my own user stories for this assignment (the overall aims are of course 
 
 📗 I want the user to be able to learn words in another language easily and without the process feeling like a chore
 
-📗 I want the website to be accessible for those who may rely on assistive technology
+📗 I want the website to be accessible for those who may rely on assistive technology, and for these users to be able to learn and interact as much and as easily as other users
 
 ## Designing
 
-The process started with the design of my database: listing what tables I thought would be needed and then the columns in each table. I did this on a sheet of paper originally, but then moved to <a href="https://drawsql.app/teams/professional-fun-haver/diagrams/language-app/embed">drawing the schema on drawSQL</a> (link should lead to the relevant diagram).
+The process started with the design of my database: listing what tables I thought would be needed and then the columns in each table. I did this on a sheet of paper originally, but then moved to <a href="https://drawsql.app/teams/professional-fun-haver/diagrams/language-app/embed">drawing the schema on drawSQL</a> (link should lead to the relevant diagram, but just as a failsafe see below)
+
+![database schema showing 5 tables](client/public/schema.png)
 
 Once I felt like I had reached a solid foundation and that my logic was correct, I asked for feedback from Tim and talked through my aims and what I was attempting to achieve. Tim advised removing a few foreign keys (for example, I originally had a foreign key for posts within profile, which was unncessary) but otherwise gave it the go-ahead, and I moved to visually designing the app in Figma.
 
+From a mobile-first POV I designed a rough wireframe, keeping in mind the components that would create each aspect of the site, and mocked up a screen for each step of the user journey.
+
+![language-learning app wireframe showing 3 screen layouts](client/public/wireframe.png)
+
+I chose a <a href="https://pixelied.com/colors/palette-editor/3d348b-7678ed-f7b801-f18701-f35b04">colour palette</a> and fonts in order to replicate a similar feeling to the <a href="https://minorfigures.com">Minor Figures</a> website, which I kind of pin-point as some sort of middle ground between the current design trends of <a href="https://cari.institute/aesthetics/acidgrafix">Acidgrafix</a> and <a href="https://cari.institute/aesthetics/paperback-chic">Paperback Chic</a>. (I'm certain there must be a better description of the design, as it is reminiscent of current graphic poster-design).
+
 ## Resources
+
+⭐️ <a href="https://fonts.google.com/share?selection.family=Source+Code+Pro:ital,wght@0,200..900;1,200..900">Source Code Pro</a>
+
+⭐️ <a href="https://fonts.google.com/share?selection.family=Rammetto+One">Rammetto One</a>
+
+⭐️ <a href="https://www.svgrepo.com/collection/animal-outlined-sepia-icons/">Icon Collection</a>
 
 ⭐️ <a href="https://www.svgrepo.com/svg/503994/chat-communication-conversation">favicon creation (edited with the in-website tools)</a>
 
 ⭐️ <a href="https://www.learn-irish.net/irishvocabulary?topic=pets&level=secondary">Soundbites (accessed via viewing source)</a>
+
+⭐️ <a href="https://cari.institute/aesthetics?asc=true&sort=name">Index of aesthetics</a>
