@@ -57,13 +57,23 @@ export default function Form() {
           onChange={handleData}
         />
         <label htmlFor="icon">ICON:</label>
-        <input
-          type="text"
+        <select
+          type="select"
           name="icon"
           required
           value={data.icon}
           onChange={handleData}
-        />
+        >
+          <option value="https://cdn-icons-png.flaticon.com/512/9811/9811068.png">
+            Harp
+          </option>
+          <option value="https://cdn-icons-png.flaticon.com/512/9811/9811075.png">
+            Beer
+          </option>
+          <option value="https://cdn-icons-png.flaticon.com/512/9811/9811080.png">
+            Leprechaun
+          </option>
+        </select>
         <label htmlFor="message">MESSAGE:</label>
         <input
           className="messageinput"
@@ -73,7 +83,6 @@ export default function Form() {
           value={data.message}
           onChange={handleData}
         />
-
         <button type="submit">SUBMIT</button>
       </fieldset>
     </form>

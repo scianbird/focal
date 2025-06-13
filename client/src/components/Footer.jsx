@@ -9,7 +9,7 @@ export default function Footer() {
           HOME
         </Link>
         <p className="divide"> / </p>
-        <Link className="learnlink" to={"/topic"}>
+        <Link className="learnlink" to={"/topics"}>
           LEARN
         </Link>
         <p className="divide"> / </p>

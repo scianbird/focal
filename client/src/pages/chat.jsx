@@ -23,7 +23,7 @@ export default function Chat() {
   return (
     <>
       {data.map((items) => {
-        return <Chatmsg key={items.first_name} data={items} />;
+        return <Chatmsg key={items.first_name} j data={items} />;
       })}
       <Form />
     </>

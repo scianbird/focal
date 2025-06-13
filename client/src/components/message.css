@@ -1,3 +1,49 @@
+.chatholder {
+  display: flex;
+  justify-content: center;
+  background-color: #f35b04;
+  padding: 10px;
+  text-wrap: wrap;
+}
 .chatmessage {
-  background-color: aliceblue;
+  background-color: #fafbfe;
+  padding: 1rem;
+  margin-bottom: 10px;
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  color: #7678ed;
+  font-family: "Rammetto One", sans-serif;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: #3d348b;
+  display: flex;
+  margin-right: 10px;
+}
+
+.messageText {
+  font-family: "Source Code Pro", monospace;
+  color: #3d348b;
+  display: flex;
+  font-size: large;
+  font-weight: 700;
+}
+
+.imgtxt {
+  display: flex;
+  align-items: center;
+}
+
+.firstname {
+  color: #f18701;
+  font-family: "Source Code Pro", monospace;
+  font-size: medium;
+  display: flex;
+  align-self: center;
+  margin-left: 5px;
 }

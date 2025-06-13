@@ -5,6 +5,7 @@
   min-height: 10rem;
   padding: 3rem;
   gap: 0.5rem;
+  padding-bottom: 5rem;
 }
 
 .legend {
@@ -16,6 +17,13 @@
 }
 
 input {
+  background-color: #fee69e;
+  width: 100%;
+  height: 2rem;
+  font-family: "Source Code Pro", monospace;
+}
+
+select {
   background-color: #fee69e;
   width: 100%;
   height: 2rem;
