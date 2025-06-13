@@ -23,7 +23,7 @@ export default function Home() {
             But there are three different number systems! One for maths, one for
             counting people and one for counting anything non-human 🧑‍🏫
           </li>
-          <li>There are also 45 different ways to say stone</li>
+          <li>There are also 45 different ways to say stone...</li>
           <li>
             Irish is part of the 9% of languages that use Verb-Subject-Object
             (like Spanish!)

@@ -7,6 +7,7 @@ export default function Topic() {
     <div>
       <>
         <h1>topic page</h1>
+        <h1>hello</h1>
       </>{" "}
       <Routes>
         <Route path="pets" element={<Pets />} />

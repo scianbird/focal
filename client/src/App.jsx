@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router";
 import NotFound from "./pages/notfound";
 import Home from "./pages/homepage.jsx";
 import Chat from "./pages/chat.jsx";
-import Topics from "./pages/topic.jsx";
+import Topics from "./pages/topics.jsx";
 import Quiz from "./pages/quizpage.jsx";
 
 export default function App() {
