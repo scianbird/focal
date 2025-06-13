@@ -33,7 +33,15 @@ From a mobile-first POV I designed a rough wireframe, keeping in mind the compon
 
 ![language-learning app wireframe showing 3 screen layouts](client/public/wireframe.png)
 
-I chose a <a href="https://pixelied.com/colors/palette-editor/3d348b-7678ed-f7b801-f18701-f35b04">colour palette</a> and fonts in order to replicate a similar feeling to the <a href="https://minorfigures.com">Minor Figures</a> website, which I kind of pin-point as some sort of middle ground between the current design trends of <a href="https://cari.institute/aesthetics/acidgrafix">Acidgrafix</a> and <a href="https://cari.institute/aesthetics/paperback-chic">Paperback Chic</a>. (I'm certain there must be a better description of the design, as it is reminiscent of current graphic poster-design).
+I chose a <a href="https://pixelied.com/colors/palette-editor/3d348b-7678ed-f7b801-f18701-f35b04">colour palette</a> and fonts in order to replicate a similar feeling to the <a href="https://minorfigures.com">Minor Figures</a> website, which I kind of pin-point as some sort of middle ground between the current design trends of <a href="https://cari.institute/aesthetics/acidgrafix">Acidgrafix</a> and <a href="https://cari.institute/aesthetics/paperback-chic">Paperback Chic</a>. (I'm certain there must be a better description of the design, as it is reminiscent of current graphic poster-design trends).
+
+## Building
+
+I aimed to have a working skeleton that would communicate correctly with my database. To do this, I first had to seed data into the tables - particularly the tables that can not be edited by users (for example, the Irish wordbank). I did this via SQL, which was no trouble although time-consuming.
+
+Then, the process of setting up the get and post routes. It's strange how this felt like acient history by this point in the course after just a week of not setting them up, but it's like riding a bike (<- this is a scary analogy to use for a person who in fact did not get their last full-stack app working to the level they wanted). The sheer amount of get routes I set up felt almost comical, which may either be a problem with my understanding of routes, my database design, or maybe just the fact that I was setting all this up for a weekend assignment (I'm dedicated 🙂‍↕️).
+
+The testing of all routes meant that I had to build a bare-bones but functional form component first (the other components all just had their name as placeholder text so that I could tell if everything was rendering correctly) and I hoped that this would be the end of the server and that I could start working on the client.
 
 ## Resources
 

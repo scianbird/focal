@@ -1,8 +1,10 @@
+import "./header.css";
+
 export default function Header() {
   return (
     <>
       {" "}
-      <p>hello i am a header </p>
+      <p className="header">hello i am a header </p>
     </>
   );
 }
