@@ -1,6 +1,7 @@
 import { useState } from "react";
+import "../components/form.css";
 
-//writing it in WET code to see if I can spy where I was going wrong
+//writing it in WET code first to see if I can spy where I was going wrong
 
 export default function Form() {
   const [data, setData] = useState({
@@ -35,9 +36,11 @@ export default function Form() {
   }
   return (
     <form onSubmit={handleSubmit}>
-      <fieldset>
-        <legend>Cuir teachtaireacht isteach</legend>
-        <label htmlFor="username">username: </label>
+      <fieldset className="form">
+        <legend className="legend">
+          CUIR TEACHTAIREACHT ISTEACH | SEND A MESSAGE
+        </legend>
+        <label htmlFor="username">USERNAME: </label>
         <input
           type="VARCHAR(255)"
           name="username"
@@ -45,7 +48,7 @@ export default function Form() {
           value={data.username}
           onChange={handleData}
         />
-        <label htmlFor="first_name">First Name:</label>
+        <label htmlFor="first_name">FIRST NAME:</label>
         <input
           type="VARCHAR(255)"
           name="first_name"
@@ -53,7 +56,7 @@ export default function Form() {
           value={data.first_name}
           onChange={handleData}
         />
-        <label htmlFor="icon">Icon:</label>
+        <label htmlFor="icon">ICON:</label>
         <input
           type="text"
           name="icon"
@@ -61,8 +64,9 @@ export default function Form() {
           value={data.icon}
           onChange={handleData}
         />
-        <label htmlFor="message">Message:</label>
+        <label htmlFor="message">MESSAGE:</label>
         <input
+          className="messageinput"
           type="text"
           name="message"
           required
@@ -70,7 +74,7 @@ export default function Form() {
           onChange={handleData}
         />
 
-        <button type="submit">Submit</button>
+        <button type="submit">SUBMIT</button>
       </fieldset>
     </form>
   );

@@ -1,0 +1,48 @@
+.form {
+  background-color: #7678ed;
+  display: flex;
+  flex-direction: column;
+  min-height: 10rem;
+  padding: 3rem;
+  gap: 0.5rem;
+}
+
+.legend {
+  background-color: #7678ed;
+  font-family: "Source Code Pro", monospace;
+  color: #fafbfe;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+input {
+  background-color: #fee69e;
+  width: 100%;
+  height: 2rem;
+  font-family: "Source Code Pro", monospace;
+}
+
+.messageinput {
+  height: 6rem;
+}
+
+label {
+  color: #fafbfe;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.2rem;
+}
+
+button {
+  background-color: #f35b04;
+  color: #fee69e;
+  padding: 1rem;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+
+  background-color: #fee69e;
+  color: #f35b04;
+}
