@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+//writing it in WET code to see if I can spy where I was going wrong
+
 export default function Form() {
   const [data, setData] = useState({
     username: "",
@@ -9,21 +11,26 @@ export default function Form() {
     text: "",
   });
   function handleData(event) {
-    setData({ ...data, [event.target.name]: event.target.value });
+    const { name, value } = event.target;
+    setData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   }
+
   function handleSubmit(event) {
     event.preventDefault(); //clear the form after submit
     fetch(import.meta.env.VITE_FETCH_PORT + "/newpost", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
-    });
-    setData({
-      username: "",
-      first_name: "",
-      icon: "",
-      bio: "",
-      text: "",
+    }).then(() => {
+      setData({
+        username: "",
+        first_name: "",
+        icon: "",
+        message: "",
+      });
     });
   }
   return (
@@ -54,22 +61,15 @@ export default function Form() {
           value={data.icon}
           onChange={handleData}
         />
-        <label htmlFor="bio">Bio:</label>
+        <label htmlFor="message">Message:</label>
         <input
           type="text"
-          name="bio"
+          name="message"
           required
-          value={data.bio}
+          value={data.message}
           onChange={handleData}
         />
-        <label htmlFor="text">Message:</label>
-        <input
-          type="text"
-          name="text"
-          required
-          value={data.text}
-          onChange={handleData}
-        />
+
         <button type="submit">Submit</button>
       </fieldset>
     </form>
