@@ -1,0 +1,75 @@
+.homepagecolourblock {
+  background: linear-gradient(
+    0deg,
+    rgba(243, 91, 4, 1) 0%,
+    rgba(247, 184, 1, 1) 100%
+  );
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.homepagetitle {
+  font-family: "Rammetto One", sans-serif;
+  display: flex;
+  font-size: 4rem;
+  line-height: 98%;
+  align-items: last baseline;
+  color: #161331;
+  margin-left: 5px;
+}
+
+.animated:before {
+  margin-left: 10px;
+  margin-right: 5px;
+  content: "Fáilte!";
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 30s;
+  animation-name: animate;
+  animation-duration: 30s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  color: #fafbfe;
+}
+
+@keyframes animate {
+  0% {
+    content: " Fáilte!";
+  }
+
+  50% {
+    content: " Welcome!";
+  }
+}
+/* 
+I looked at this code for the animation https://jsfiddle.net/ko19x1wm/1/ as well as https://developer.mozilla.org/en-US/docs/Web/CSS/animation */
+
+.homepagescroll {
+  background-color: #fafbfe;
+  height: 20rem;
+}
+
+.irishbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(
+    0deg,
+    rgba(66, 53, 135, 1) 26%,
+    rgba(243, 91, 4, 1) 100%
+  );
+  height: 20rem;
+  font-family: "Source Code Pro", monospace;
+  color: #fafbfe;
+  font-size: larger;
+}
+
+h3 {
+  font-size: x-large;
+  padding: 5px;
+}

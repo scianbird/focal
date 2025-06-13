@@ -2,9 +2,9 @@ import "./header.css";
 
 export default function Header() {
   return (
-    <>
+    <div className="header">
       {" "}
-      <p className="header">hello i am a header </p>
-    </>
+      <p>FOCAL</p>
+    </div>
   );
 }

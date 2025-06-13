@@ -1,3 +1,55 @@
-p {
-  background-color: blueviolet;
+.footer {
+  overflow: hidden;
+  background-color: #161331;
+  font-family: "Source Code Pro", monospace;
+  font-size: xx-large;
+  font-weight: 500;
+  transform: skewY(2deg);
+  transform-origin: bottom right;
+  height: 6rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homelink {
+  text-decoration: none;
+  color: #fafbfe;
+}
+
+.homelink:hover {
+  color: #7678ed;
+}
+
+.learnlink {
+  text-decoration: none;
+  color: #fafbfe;
+}
+
+.learnlink:hover {
+  color: #f7b801;
+}
+
+.quizlink {
+  text-decoration: none;
+  color: #fafbfe;
+}
+
+.quizlink:hover {
+  color: #f18701;
+}
+
+.chatlink {
+  text-decoration: none;
+  color: #fafbfe;
+}
+
+.chatlink:hover {
+  color: #f35b04;
+}
+
+.divide {
+  color: #fafbfe;
+  padding: 10px;
 }

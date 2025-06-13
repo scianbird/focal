@@ -1,3 +1,21 @@
 .header {
-  background-color: aqua;
+  overflow: hidden;
+  background-color: #161331;
+  padding: 10px;
+  font-family: "Source Code Pro", monospace;
+  font-size: xx-large;
+  font-weight: 500;
+  color: #fafbfe;
+  transform: skewY(-2deg);
+  transform-origin: top left;
+  height: 6rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+/* styling of the "skewed" angle was helped by this codepen https://codepen.io/erikdkennedy/pen/EZozpV */
+
+p {
+  margin-left: 10px;
 }
