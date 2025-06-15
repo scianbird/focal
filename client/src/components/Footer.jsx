@@ -13,9 +13,7 @@ export default function Footer() {
           LEARN
         </Link>
         <p className="divide"> / </p>
-        <Link className="quizlink" to={"/quizpage"}>
-          QUIZ
-        </Link>
+        QUIZ
         <p className="divide"> / </p>
         <Link className="chatlink" to={"/chat"}>
           CHAT

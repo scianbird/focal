@@ -2,6 +2,8 @@
 should have horizontal scrolling topics and conditionally rendered content underneath that
 equal to the "home" icon on the footer */
 import "./homepage.css";
+import { Link } from "react-router";
+
 export default function Home() {
   return (
     <section className="homepage">
@@ -12,8 +14,23 @@ export default function Home() {
       </div>
       <div className="homepagescroll">
         <h2>
-          here will be a horizontal scrolling list of topics - a component
+          here will be a horizontal scrolling list of topics - mapping like the
+          thumbnail gallery. but until then:
         </h2>
+        <ul className="templist">
+          <Link to={"/topics/pets"}>
+            <li>pets</li>
+          </Link>
+          <Link to={"/drinks"}>
+            <li>drinks</li>
+          </Link>
+          <Link to={"/colours"}>
+            <li>colours</li>
+          </Link>
+          <Link to={"/jobs"}>
+            <li>jobs</li>
+          </Link>
+        </ul>
       </div>
       <div className="irishbox">
         <h3>DID YOU KNOW?</h3>

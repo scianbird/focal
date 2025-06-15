@@ -32,6 +32,19 @@ app.get("/english", async (req, res) => {
   }
 });
 
+app.get("/topics", async (req, res) => {
+  try {
+    const query = await db.query(`SELECT *
+FROM topics
+JOIN english ON topics.topic_id = topics_id;`);
+    res.json(query.rows);
+    console.log(query.rows);
+  } catch {
+    console.log("ERR check TOPICS");
+    res.json(false);
+  }
+});
+
 app.get("/irish", async (req, res) => {
   try {
     const query = await db.query(`SELECT * FROM irish;`);
@@ -39,17 +52,6 @@ app.get("/irish", async (req, res) => {
     console.log(query.rows);
   } catch {
     console.log("ERR check IRISH");
-    res.json(false);
-  }
-});
-
-app.get("/images", async (req, res) => {
-  try {
-    const query = await db.query(`SELECT * FROM images;`);
-    res.json(query.rows);
-    console.log(query.rows);
-  } catch {
-    console.log("ERR check IMAGES");
     res.json(false);
   }
 });
@@ -92,3 +94,22 @@ app.post("/newpost", async (req, res) => {
 });
 
 //the post gave me some problems, especiallly once I added in the 2nd route to fill information in on the 2nd table - for simplicity sake I instead changed the "bio" column in the profile table to serve as the message the user would post instead
+//make an endpoint for pets - need the english word, the image and the data from irish
+//select all from irish, all from english, join english on images and join english on irish
+
+//the topic pages should be dynamic i think .. lets see can i get that working .. like /topics/:topicname
+//im not entirely sure how to use outlet, so for now i will just "hardcode" in a pet page
+
+app.get("/pets", async (req, res) => {
+  try {
+    const query = await db.query(`SELECT * FROM english
+      JOIN irish ON english.eng_id = irish.eng_id
+      JOIN images ON english.img_id = images.img_id
+      WHERE english.topics_id = 1;`);
+    res.json(query.rows);
+    console.log(query.rows);
+  } catch {
+    console.log("ERR check PETS");
+    res.json({ get: false });
+  }
+});

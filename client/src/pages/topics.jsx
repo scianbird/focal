@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router";
 import Pets from "./pets";
 import { Link } from "react-router";
+import "./topics.css";
 
 export default function Topic() {
   return (
@@ -12,7 +13,7 @@ export default function Topic() {
       <Routes>
         <Route path="pets" element={<Pets />} />
       </Routes>
-      <Link to={"/topics/pets"}>pets</Link>
+      <Link to={"/pets"}>pets</Link>
     </div>
   );
 }

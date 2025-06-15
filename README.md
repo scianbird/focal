@@ -43,7 +43,9 @@ Then it was the process of setting up the get and post routes. It's strange how 
 
 The testing of all routes meant that I had to build a bare-bones but functional form component first (the other components all just had their name as placeholder text so that I could tell if everything was rendering correctly) and I hoped that this would be the end of the server and that I could start working on the client. After working on it for a while, I debugged with Manny and in discussing the logic of submitting data to 2 different tables in the same form (requiring 2 inserts in the server routes), I thought about other ways of doing this: rendering a new form "on submit" which would be the form that submits data to the second table and, since there was no user validation anyway, removing the 2nd table and submitted all the data to one table. Fortunatley for my app and possibly unfortunatley for my learning journey, I chose to condense the tables into one.
 
-After this was done and I was sure everything was working as expected I created a branch and then started work on my client. This would include rendering components, styling and (I'm sure) troubleshooting component by component, focusing first on the components needed in order to create an MVP.
+After this was done and I was sure everything was working as expected I created a branch and then started work on my client. This would include rendering components, styling and (I'm sure) troubleshooting component by component, focusing first on the components needed in order to create an MVP. While buildling I realised that changes would have to be made to my database, so I added a table that would link words by topic, so that selecting a topic could display relevant words.
+
+Although I got SQL queries working to show only the relevant information, unfortunatley time constraints meant I was not able to complete the app to the level I imagined/had planned. The skeleton exists though, and what I managed to get done, I am proud of.
 
 ## Resources
 
