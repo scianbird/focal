@@ -5,7 +5,6 @@ import NotFound from "./pages/notfound";
 import Home from "./pages/homepage.jsx";
 import Chat from "./pages/chat.jsx";
 import Topics from "./pages/topics.jsx";
-import Quiz from "./pages/quizpage.jsx";
 
 export default function App() {
   return (
@@ -14,7 +13,6 @@ export default function App() {
       <Routes>
         <Route path={"/*"} element={<NotFound />} />
         <Route path={"/"} element={<Home />} />
-        <Route path={"/quizpage"} element={<Quiz />} />
         <Route path={"/chat"} element={<Chat />} />
         <Route path={"/topics/*"} element={<Topics />} />
       </Routes>
